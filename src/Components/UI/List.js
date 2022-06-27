@@ -51,7 +51,7 @@ export default function List() {
     return (
         <div>
             <h2>Characters</h2>
-            <Pagination nextPage={nextPage} prevPage={prevPage} pages={pages} goToPage={goToPage}/>
+            <Pagination/>
             <div className="row">
                 {
                     characters.map((character) => (
@@ -64,7 +64,7 @@ export default function List() {
                     ))
                 }
             </div>
-            <Pagination nextPage={nextPage} prevPage={prevPage} pages={pages} goToPage={goToPage}/>
+                <Pagination/>
         </div>
     )
 }
